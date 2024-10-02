@@ -15,6 +15,5 @@ buildscript {
     }
     dependencies {
         classpath libraries.build.androidGradle
-        classpath libraries.build.bintrayRelease
     }
 }

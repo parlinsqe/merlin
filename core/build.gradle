@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'bintray-release'
 
 dependencies {
     implementation libraries.app.supportAnnotations
@@ -19,15 +18,4 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
-}
-
-publish {
-    userOrg = 'novoda'
-    groupId = 'com.novoda'
-    artifactId = 'merlin'
-    publishVersion = project.version
-
-    uploadName = 'merlin'
-    desc = 'Observes network connection status & gives callbacks'
-    website = 'https://github.com/novoda/merlin'
 }
