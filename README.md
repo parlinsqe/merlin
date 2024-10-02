@@ -11,11 +11,11 @@ To start using Merlin, add these lines to your module's `build.gradle`:
 
 ```groovy
 repositories {
-    jcenter()
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
-    implementation 'com.novoda:merlin:1.2.0'
+    implementation 'com.github.parlinsqe:merlin:1.2.2'
 }
 ```
 

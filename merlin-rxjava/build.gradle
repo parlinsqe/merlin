@@ -17,3 +17,17 @@ android {
 
     compileSdkVersion versions.androidSdk.compile
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.parlinsqe'
+                artifactId = 'merlin-rxjava'
+                version = project.version
+            }
+        }
+    }
+}

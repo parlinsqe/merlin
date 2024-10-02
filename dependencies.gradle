@@ -9,7 +9,7 @@ ext {
 
     libraries = [
             build: [
-                    androidGradle : 'com.android.tools.build:gradle:3.0.1'
+                    androidGradle : 'com.android.tools.build:gradle:7.4.0'
             ],
             app  : [
                     supportAnnotations: "com.android.support:support-annotations:${versions.support}",
